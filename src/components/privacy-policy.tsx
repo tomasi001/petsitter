@@ -24,7 +24,7 @@ export function PrivacyPolicy() {
         <div className="space-y-6">
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">Privacy Policy</h1>
           <p className="mt-3 text-lg text-muted-foreground">
-            At Paw-fect Pals, we are committed to protecting the privacy and security of our customers' personal
+            At Paw-fect Pals, we are committed to protecting the privacy and security of our customers&apos; personal
             information. This privacy policy explains how we collect, use, and safeguard your data.
           </p>
           <section>
