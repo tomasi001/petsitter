@@ -24,6 +24,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import { JSX, SVGProps } from "react"
 
 export function landing() {
   return (
@@ -133,19 +134,20 @@ export function landing() {
               <Card>
                 <CardContent>
                   <div className="flex flex-col gap-4">
-                    <div className="flex items-center gap-4">
+                    <div className="flex items-center gap-4 pt-4">
                       <Avatar>
                         <AvatarImage src="/placeholder-user.jpg" alt="Avatar" />
                         <AvatarFallback>JD</AvatarFallback>
                       </Avatar>
-                      <div>
+                      <div className="text-left">
                         <p className="text-sm font-medium leading-none">Jessica Davis</p>
                         <p className="text-sm text-muted-foreground">Dog Owner</p>
                       </div>
                     </div>
                     <p className="text-muted-foreground">
-                      "Paw-fect Pals has been a lifesaver for my family. They\n provide exceptional care for our two
-                      pups, and we\n couldn't be happier with their services."
+                      &quot;Paw-fect Pals has been a lifesaver for my family.
+                      They provide exceptional care for our two pups, and we
+                      couldn&apos;t be happier with their services.&quot;
                     </p>
                   </div>
                 </CardContent>
@@ -153,19 +155,20 @@ export function landing() {
               <Card>
                 <CardContent>
                   <div className="flex flex-col gap-4">
-                    <div className="flex items-center gap-4">
+                    <div className="flex items-center gap-4 pt-4">
                       <Avatar>
                         <AvatarImage src="/placeholder-user.jpg" alt="Avatar" />
                         <AvatarFallback>SM</AvatarFallback>
                       </Avatar>
-                      <div>
+                      <div className="text-left">
                         <p className="text-sm font-medium leading-none">Sarah Miller</p>
                         <p className="text-sm text-muted-foreground">Cat Owner</p>
                       </div>
                     </div>
                     <p className="text-muted-foreground">
-                      "I've used many pet sitting services, but Paw-fect Pals\n is by far the best. They truly care
-                      about my cats and\n provide exceptional attention and care."
+                      &quot;I&apos;ve used many pet sitting services, but Paw-fect Pals
+                      is by far the best. They truly care about my cats and
+                      provide exceptional attention and care.&quot;
                     </p>
                   </div>
                 </CardContent>
@@ -173,19 +176,20 @@ export function landing() {
               <Card>
                 <CardContent>
                   <div className="flex flex-col gap-4">
-                    <div className="flex items-center gap-4">
+                    <div className="flex items-center gap-4 pt-4">
                       <Avatar>
                         <AvatarImage src="/placeholder-user.jpg" alt="Avatar" />
                         <AvatarFallback>TW</AvatarFallback>
                       </Avatar>
-                      <div>
+                      <div className="text-left">
                         <p className="text-sm font-medium leading-none">Tom Wilson</p>
                         <p className="text-sm text-muted-foreground">Dog Owner</p>
                       </div>
                     </div>
                     <p className="text-muted-foreground">
-                      "Paw-fect Pals has been a game-changer for my family.\n They provide reliable, trustworthy care
-                      for our pup, and\n we can't imagine using anyone else."
+                      &quot;Paw-fect Pals has been a game-changer for my family.
+                      They provide reliable, trustworthy care for our pup, and
+                      we can&apos;t imagine using anyone else.&quot;
                     </p>
                   </div>
                 </CardContent>
@@ -199,7 +203,7 @@ export function landing() {
             <div className="space-y-3">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Get in Touch</h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Have a question or ready to book your pet's stay? Fill out the form below, and we'll be in touch.
+                Have a question or ready to book your pet&apos;s stay? Fill out the form below, and we&apos;ll be in touch.
               </p>
             </div>
             <div className="mx-auto w-full max-w-sm space-y-2">
@@ -228,7 +232,7 @@ export function landing() {
   )
 }
 
-function PawPrintIcon(props) {
+function PawPrintIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
